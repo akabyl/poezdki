@@ -1,0 +1,356 @@
+:root {
+	--font-family: 'Inter', sans-serif;
+	--second-family: 'Manrope', sans-serif;
+}
+
+body {
+	font-family: var(--font-family);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.74;
+	background-color: #fff;
+	color: #252c32;
+}
+
+.container {
+	max-width: 1410px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/********************************* HEADER START *************************************/
+.header {
+	box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
+}
+.header__row {
+	display: flex;
+	justify-content: space-between;
+}
+.header__list {
+	margin-left: 354px;
+}
+.header__item {
+	font-weight: 600;
+	letter-spacing: -0.006em;
+	padding: 20px 12px;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+.header__item:hover {
+	transition: all 0.2s ease-in;
+	background-color: #4094f7;
+	color: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.header__item.active::after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	background-color: #4094f7;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.header__user {
+	justify-content: end;
+}
+.log {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	span {
+		height: 16px;
+	}
+}
+.log__name {
+	letter-spacing: -0.006em;
+	color: #0e73f6;
+	transition: color 0.2s ease-in;
+}
+.log__name:hover {
+	color: #5fa7fa;
+}
+/********************************* HEADER END ***************************************/
+
+/********************************* MAIN START *************************************/
+.main {
+}
+.main__row {
+}
+.main__info {
+}
+.main__top {
+	padding: 18px 0 14px;
+}
+.main__top > .container {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.main__title {
+	font-weight: 600;
+	font-size: 16px;
+}
+.main__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 11px;
+	background-color: #4094f7;
+	color: #f6f8f9;
+	padding: 7px 8px 7px 15px;
+	padding: 0 10px;
+	border-radius: 4px;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: -0.006em;
+}
+.main__bottom {
+	background-color: #f6fcff;
+	padding: 8px 0 0px;
+}
+.main__form {
+}
+.form {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+.form__label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	max-width: 256px;
+	position: relative;
+}
+.form__input {
+	font-family: var(--font-family);
+	font-size: 14px;
+	font-weight: 400;
+	/* line-height: 24px; */
+	letter-spacing: -0.006em;
+	padding: 4px 4px 4px 12px;
+	border: 1px solid #dde2e4;
+	border-radius: 7px;
+	color: #252c32;
+}
+.form__input::placeholder {
+	color: #9aa6ac;
+}
+.form__input-date {
+	width: 160px;
+	position: relative;
+}
+.form__input-date::after {
+	color: transparent;
+}
+
+.close {
+	position: absolute;
+	top: 8px;
+	right: 30px;
+}
+
+.form__input-search {
+	width: 260px;
+	padding: 10px 25px 10px 12px;
+}
+
+.form__input-search::placeholder {
+	line-height: 24px;
+}
+.form__span {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.006em;
+	color: #000000;
+}
+
+.label-search {
+	position: relative;
+	max-width: 260px;
+	width: 100%;
+}
+
+.search-btn {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	z-index: 9;
+	top: 6px;
+	right: 4px;
+}
+
+.form__button {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #4094f7;
+}
+
+.archive {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.archive__text {
+	font-size: 12px;
+	line-height: 16px;
+}
+.archive__checkbox[type='checkbox'] {
+	display: none;
+}
+.custom-checkbox {
+	width: 16px;
+	height: 16px;
+	border: 1px solid #dee2e6;
+	background-color: #fff;
+	border-radius: 5px;
+	display: inline-block;
+}
+.archive__checkbox[type='checkbox']:checked + .custom-checkbox {
+	color: #fff;
+	background-color: #2cacaf;
+}
+
+.line {
+	width: 100%;
+	background-color: #d7edff;
+	height: 2px;
+	border-radius: 2px;
+	position: relative;
+	margin-top: 15px;
+}
+.line span {
+	width: 25%;
+	height: 2px;
+	display: inline-block;
+	background-color: #4094f7;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main__content {
+	background-color: #f6fcff;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+.trips {
+}
+.trips__list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.trips__item {
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 16px 16px 16px 24px;
+	display: flex;
+	align-items: center;
+	gap: 28px;
+}
+.trips__number {
+	flex-basis: 68px;
+}
+.top {
+	font-size: 12px;
+	line-height: 16px;
+	color: #84919a;
+	margin-bottom: 8px;
+}
+.bottom {
+	font-size: 14px;
+	letter-spacing: -0.006em;
+	color: #252c32;
+	position: relative;
+	display: flex;
+}
+.bottom.accent {
+	color: #0e73f6;
+}
+.trips__date {
+	flex-basis: 176px;
+}
+.trips__plan {
+	flex-basis: 114px;
+	text-align: end;
+}
+.trips__fact {
+	flex-basis: 86px;
+}
+.trips__city {
+}
+.trips__status {
+	flex-basis: 96px;
+	margin-left: auto;
+	text-align: center;
+}
+.trips__status > .bottom {
+	justify-content: center;
+}
+.trips-btn {
+	padding: 4px 8px;
+	background-color: #eef0f2;
+	color: #5b6871;
+  font-size: 12px;
+  border-radius: 10px;
+}
+.info-wrap {
+	display: inline-block;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s ease-in;
+}
+
+.info-img {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 1px;
+	text-align: end;
+}
+
+.info {
+	font-size: 12px;
+	line-height: 16px;
+	color: #f6f8f9;
+	background-color: #303940;
+	border-radius: 4px;
+	padding: 4px 8px;
+	position: absolute;
+	width: 220px;
+	right: -181px;
+	top: -70px;
+}
+.info::before {
+	content: '';
+	position: absolute;
+	left: 20px;
+	bottom: -20px;
+	border: 10px solid transparent;
+	border-top: 10px solid #303940;
+}
+.info::after {
+	border-top: 10px solid white;
+	bottom: -19px;
+}
+.info-img:hover + .info-wrap {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.2s ease-in;
+}
+/********************************* MAIN END ***************************************/
+
+/********************************* HEADER START *************************************/
+/********************************* HEADER END ***************************************/

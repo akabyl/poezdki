@@ -1,0 +1,96 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	object-fit: cover;
+	width: 100%;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	-webkit-appearance: none;
+}
+/*Так можно перекрасить*/
+::-webkit-calendar-picker-indicator {
+	filter: invert(0);
+	background-image: url('./img/date-calendar.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 24px;
+	height: 24px;
+}
+/*А так убрать*/
+/* input[type='date']::-webkit-calendar-picker-indicator {
+	opacity: 0;
+} */
+
+input[type='date']::-webkit-datetime-edit {
+	color: transparent;
+}
+
+input[type='date'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: transparent; /* Скрываем текст */
+}
+
+input[type='date'].has-value {
+	color: black; /* Показываем текст если есть значение */
+}
+
+input[type='date']::-webkit-datetime-edit,
+input[type='date']::-webkit-datetime-edit-year-field,
+input[type='date']::-webkit-datetime-edit-month-field,
+input[type='date']::-webkit-datetime-edit-day-field {
+	color: transparent; /* Скрываем текст */
+}
+
+input[type='date'].has-value::-webkit-datetime-edit,
+input[type='date'].has-value::-webkit-datetime-edit-year-field,
+input[type='date'].has-value::-webkit-datetime-edit-month-field,
+input[type='date'].has-value::-webkit-datetime-edit-day-field {
+	color: black; /* Показываем текст если есть значение */
+}
